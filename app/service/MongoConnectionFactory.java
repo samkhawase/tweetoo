@@ -18,7 +18,7 @@ public class MongoConnectionFactory {
 		try {
 		    Morphia morphia = new Morphia();
 		    Mongo mongo = new Mongo("127.0.0.1",27017);
-		    ds = morphia.createDatastore(mongo, "test");
+		    ds = morphia.createDatastore(mongo, "tweetoo");
 		    ds.ensureIndexes();
 		    ds.ensureCaps();
 		} catch (Exception e) {

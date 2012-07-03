@@ -12,15 +12,17 @@ object ApplicationBuild extends Build {
      "com.google.code.morphia" % "morphia" % "0.99",
      "org.mongodb" % "mongo-java-driver" % "2.7.3",
      "com.google.code.morphia" % "morphia-logging-slf4j" % "0.99",
-     "org.scribe" % "scribe" % "1.3.0"
+     "org.twitter4j" % "twitter4j-stream" % "2.2.5",
+     "org.twitter4j" % "twitter4j-core" % "2.2.5"
+
     )
 
     val main = PlayProject(appName, appVersion, appDependencies, mainLang = JAVA).settings(
       // Add your own project settings here     
      resolvers += "Maven repository" at "http://morphia.googlecode.com/svn/mavenrepo/",
      resolvers += "MongoDb Java Driver Repository" at "http://repo1.maven.org/maven2/org/mongodb/mongo-java-driver/",
-     resolvers += "Scribe OAuth Library" at "http://repo1.maven.org/maven2/org/scribe/scribe/"
-       
+     resolvers += "A Java library for the Twitter API" at "http://repo1.maven.org/maven2/org/twitter4j/twitter4j-stream/",
+	 resolvers += "A Java library for the Twitter API" at "http://repo1.maven.org/maven2/org/twitter4j/twitter4j/"
     )
 
 }

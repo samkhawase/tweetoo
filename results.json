@@ -54,7 +54,7 @@
 	"to_user_name":null
 }
 
-/* 
+/* individual tweet */
 {
 	"id":217777030450774016,
 	"profile_image_url":"http:\/\/a0.twimg.com\/profile_images\/1091466557\/twitter-jobs-icon_normal.png",
@@ -63,5 +63,45 @@
 	"text":"Accounting Manager - Finance @ Gavilon, LLC http:\/\/t.co\/cGJQKVvx"
 	"skill":"Finance",
 	"Location":"Des Moines"
-	
+
 }
+
+/* Status object twitter4j */
+
+@UserJSONImpl{
+	id=23500954, 
+	name='BCjobs.ca', 
+	screenName='BCjobs', 
+	location='British Columbia', 
+	description='Bringing you the latest jobs in BC - http://bit.ly/oaTmGw ', 
+	isContributorsEnabled=false,
+	profileImageUrl='http://a0.twimg.com/profile_images/1120666196/logo_bcjobs_bigger.gif_normal.png',
+	profileImageUrlHttps='https://si0.twimg.com/profile_images/1120666196/logo_bcjobs_bigger.gif_normal.png',
+	url='null',
+	isProtected=false,
+	followersCount=2492,
+	status=null,
+	profileBackgroundColor='efefef',
+	profileTextColor='333333',
+	profileLinkColor='0872b8',
+	profileSidebarFillColor='fafafa',
+	profileSidebarBorderColor='e8ebe6',
+	profileUseBackgroundImage=true,
+	showAllInlineMedia=false,
+	friendsCount=953,
+	createdAt=Mon Mar 09 16:04:20 CDT 2009,
+	favouritesCount=0,
+	utcOffset=-32400,
+	timeZone='Alaska',
+	profileBackgroundImageUrl='http://a0.twimg.com/profile_background_images/323080026/bcjobs_twitter_bg_v2.jpg',
+	profileBackgroundImageUrlHttps='https://si0.twimg.com/profile_background_images/323080026/bcjobs_twitter_bg_v2.jpg',
+	profileBackgroundTiled=false,
+	lang='en',
+	statusesCount=39373,
+	isGeoEnabled=false,
+	isVerified=false,
+	translator=false,
+	listedCount=126,
+	isFollowRequestSent=false
+}
+text = "#constructionjobs Senior Mechanical Engineer (OMI-1206-278ME-BC): Vancouver (Company Confidential),.. http://t.co/8DRtwm5Z #bcjobs #hiring"

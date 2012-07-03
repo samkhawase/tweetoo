@@ -16,7 +16,7 @@ public class Application extends Controller {
 	public static Result index() throws Exception {
 
 		Logger.info("attempting to call renderTweet");
-//		RenderTweetResults.getResult();
+		RenderTweetResults.getResult();
 		return ok("Ok.");
 		
 /*		Datastore ds = MongoConnectionFactory.getInstance().getDs();
@@ -37,7 +37,8 @@ public class Application extends Controller {
 			System.out.println(me2.groupName);
 			result = me2.groupName;
 		}
-		return ok(result);*/
+		return ok(result);
+*/
 	}
 
 }
