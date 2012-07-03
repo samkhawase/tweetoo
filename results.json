@@ -39,7 +39,8 @@
 	"from_user_id":96512129,
 	"from_user_id_str":"96512129",
 	"from_user_name":"Des Moines Jobs",
-	"geo":null,"id":217777030450774016,
+	"geo":null,
+	"id":217777030450774016,
 	"id_str":"217777030450774016",
 	"iso_language_code":"en",
 	"metadata":{"result_type":"recent"},
@@ -51,4 +52,16 @@
 	"to_user_id":0,
 	"to_user_id_str":"0",
 	"to_user_name":null
+}
+
+/* 
+{
+	"id":217777030450774016,
+	"profile_image_url":"http:\/\/a0.twimg.com\/profile_images\/1091466557\/twitter-jobs-icon_normal.png",
+	"profile_image_url_https":"https:\/\/si0.twimg.com\/profile_images\/1091466557\/twitter-jobs-icon_normal.png",
+	"source":"&lt;a href=&quot;http:\/\/DesMoines-Jobs.com&quot; rel=&quot;nofollow&quot;&gt;Desmoines jobs&lt;\/a&gt;"
+	"text":"Accounting Manager - Finance @ Gavilon, LLC http:\/\/t.co\/cGJQKVvx"
+	"skill":"Finance",
+	"Location":"Des Moines"
+	
 }
