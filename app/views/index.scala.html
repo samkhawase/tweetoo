@@ -1,7 +1,26 @@
-@(message: String)
+@(mainForm: Form[MainScreen])
 
-@main("Welcome to Play 2.0") {
+@import helper._
+
+@main("Tweetoo main page") {
     
-    @play20.welcome(message, style = "Java")
+    <h1>Enter the data</h1>
+    
+    @form(action= routes.Application.getResults, args = 'id -> "mainForm"){
+    
+    	@inputText(
+    		field = mainForm("what"),
+    		args = '_label -> "Enter the search term", 'placeholder -> "Java"
+    	)
+    	
+    	@inputText(
+    		field = mainForm("where"),
+    		args = '_label -> "Location?", 'placeholder -> "Chicago"
+    	)
+    	
+    	<p class="buttons">
+    		<input type="submit">
+    	</p>
+    }
     
 }

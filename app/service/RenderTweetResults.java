@@ -32,8 +32,12 @@ public class RenderTweetResults extends StatusAdapter {
 
 			@Override
 			public void onStatus(Status status) {
-				Logger.info("@" + status.getUser().getScreenName() + "-->\n" + status.getText());
-				Logger.info("\n-----------------------------------------------\n");
+				Logger.info("@" + status.getUser().getScreenName() +
+						"\nTweetId: " + status.getId() + 
+						"\nLocation: " + status.getUser().getLocation() +
+						"\nCreated at: " + status.getCreatedAt() +
+						"\nText: " + status.getText());
+				Logger.info("\n----------------------------------------------------------------------------------------------\n");
 				
 			}
 

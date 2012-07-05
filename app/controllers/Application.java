@@ -1,23 +1,18 @@
 package controllers;
 
-import models.Group;
-import play.Logger;
+import models.MainScreen;
+import play.data.Form;
 import play.mvc.Controller;
 import play.mvc.Result;
-import service.MongoConnectionFactory;
-import service.RenderTweetResults;
-
-import com.google.code.morphia.Datastore;
-import com.google.code.morphia.mapping.Mapper;
-import com.google.code.morphia.query.UpdateOperations;
+import views.html.*;
 
 public class Application extends Controller {
 
 	public static Result index() throws Exception {
 
-		Logger.info("attempting to call renderTweet");
-		RenderTweetResults.getResult();
-		return ok("Ok.");
+//		Logger.info("attempting to call renderTweet");
+//		RenderTweetResults.getResult();
+		return ok(index.render(form(MainScreen.class)));
 		
 /*		Datastore ds = MongoConnectionFactory.getInstance().getDs();
 
@@ -39,6 +34,19 @@ public class Application extends Controller {
 		}
 		return ok(result);
 */
+	}
+	
+	public static Result getResults(){
+		Form<MainScreen> mainForm = form(MainScreen.class).bindFromRequest();
+		
+		if(mainForm.hasErrors()){
+			return badRequest(index.render(mainForm));
+		} else {
+			MainScreen data = mainForm.get();
+			return ok(
+					"placeholder text, result.scala.html is coming up"
+					);
+		}
 	}
 
 }

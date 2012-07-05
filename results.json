@@ -105,3 +105,11 @@
 	isFollowRequestSent=false
 }
 text = "#constructionjobs Senior Mechanical Engineer (OMI-1206-278ME-BC): Vancouver (Company Confidential),.. http://t.co/8DRtwm5Z #bcjobs #hiring"
+
+{
+	"id":"0001",
+	"screenName":"user1",
+	"location": "Chicago",
+	"text":"Tweet a message",
+	"tweetid":"12345"
+}
